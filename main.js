@@ -231,14 +231,14 @@ console.log(color(`${spc4}                       < =============================
 	Ramdani.browserDescription = [ `${setting.NamaBot}`, `${randomserverku}`, '3.0' ]
 
 	// Menunggu QR
-	Ramdani.on('qr', () => {
+	Verdi.on('qr', () => {
 		console.log(color('[', 'pink'), color('!', 'red'), color(']', 'pink'), color('Scan Om, Expired 30 Detik!'))
 	})
 
 	// Menghubungkan
 	fs.existsSync(`./${sessionsname}.json`) && Ramdani.loadAuthInfo(`./${sessionsname}.json`)
-	Ramdani.on('connecting', () => {
-		console.log(color('[ Ramdani Official ]', 'aqua'), color('Menyambungkan!'));
+	Verdi.on('connecting', () => {
+		console.log(color('[ VERDI BOTZ ]', 'aqua'), color('Menyambungkan!'));
 	})
 const ftroli = { key: { fromMe: false, "participant": "0@s.whatsapp.net", "remoteJid": "6289512545999-1604595598@g.us" }, "message": { orderMessage: { itemCount: 500, status: 200, thumbnail: fs.readFileSync(`./media/foto/thumb.jpg`), surface: 200, message: `【 RAMDANI BOTZ 】`, orderTitle: 'Ramdani Official', sellerJid: '0@s.whatsapp.net' } }, contextInfo: { "forwardingScore": 999, "isForwarded": true }, sendEphemeral: true }
 const spinner = { 
@@ -306,7 +306,7 @@ const spinner = {
     ]
 
     buttonMessagee = {
-        contentText: `BOT TELAH AKTIF DI NOMOR INI JANGAN LUPA SUBS YT RAMDANI OFFICIAL`,
+        contentText: `BOT TELAH AKTIF DI NOMOR INI JANGAN LUPA TURU`,
         footerText: `${fake.FakeReply}`,
         buttons: buttonss,
         headerType: 1
@@ -318,7 +318,7 @@ fetch(`http://ip-api.com/line`).then(res => res.text())
      console.log(color('|WARN|', 'yellow'), color('Sending ip address to developer bot', 'cyan'))
    })
     Ramdani.sendMessage(`${setting.NomorOwner}@s.whatsapp.net`, buttonMessagee, MessageType.buttonsMessage, {
-        caption: '[ RAMDANI BOTZ ]',
+        caption: '[ VERDI BOTZ ]',
         "contextInfo": {
             text: 'hi',
             "forwardingScore": 1000000000,
